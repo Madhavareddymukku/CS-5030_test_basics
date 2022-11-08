@@ -28,10 +28,6 @@ jobs:
        - run:
            name: run tests
            command: cd test-api-js && npm run test
-           
-       
-           
-           
 workflows:
   sample:
     jobs:
