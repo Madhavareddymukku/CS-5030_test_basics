@@ -17,6 +17,10 @@ class todoservice{
     constructor(){
         this.todos=this.todo_data;
     }
+    get_todos()
+    {
+        return this.todos;
+    }
 
     add_todo(todo){
         // add new todo
