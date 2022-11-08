@@ -31,11 +31,11 @@ jobs:
            
        - run:
            name: install dependencies
-           command: cd test-api-js && npm install
+           command: cd TEST-API-JS && npm install
       
        - run:
            name: run tests
-           command: cd test-api-js && npm run test
+           command: cd TEST-API-JS && npm run test
            
            
 workflows:
