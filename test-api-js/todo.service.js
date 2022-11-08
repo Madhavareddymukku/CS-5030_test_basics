@@ -18,20 +18,23 @@ class todoservice{
         this.todos=this.todo_data;
     }
 
-    get_todos(){
-        return this.todos;
-    }
-
     add_todo(todo){
-        // Your code here
+        // add new todo
+        this.todos.todo.push(todo);
     }
 
     delete_todo(id){
-        // Your code here
+        // delete todo using the id
+        const todo_object = this.todos.todo.findIndex((obj) => obj.id === id);
+        // use splice to delete the object
+        this.todos.todo.splice(todo_object, 1);
     }
 
     update_todo(id, todo){
-        // Your code here
+        // update the todo with the id
+        const todo_object = this.todos.todo.findIndex((obj) => obj.id === id);
+        // update the object
+        this.todos.todo[todo_object] = todo;
     }
 }
 
